@@ -1,0 +1,35 @@
+Enter number of packages: 8
+
+Enter package weights:
+Weight of P1: 20
+Weight of P2: 15
+Weight of P3: 20
+Weight of P4: 10
+Weight of P5: 15
+Weight of P6: 20
+Weight of P7: 25
+Weight of P8: 10
+
+Original order:
+20(P1) 15(P2) 20(P3) 10(P4) 15(P5) 20(P6) 25(P7) 10(P8) 
+
+========== MERGE SORT ==========
+After merge: 15(P2) 20(P1) 
+After merge: 15(P2) 20(P1) 10(P4) 20(P3) 
+After merge: 10(P4) 15(P2) 20(P1) 20(P3) 
+After merge: 10(P4) 15(P2) 20(P1) 20(P3) 15(P5) 20(P6) 
+After merge: 10(P4) 15(P2) 20(P1) 20(P3) 15(P5) 20(P6) 10(P8) 25(P7) 
+After merge: 10(P4) 15(P2) 20(P1) 20(P3) 10(P8) 15(P5) 20(P6) 25(P7) 
+After merge: 10(P4) 10(P8) 15(P2) 15(P5) 20(P1) 20(P3) 20(P6) 25(P7) 
+
+Final Merge Sort:
+10(P4) 10(P8) 15(P2) 15(P5) 20(P1) 20(P3) 20(P6) 25(P7) 
+
+========== QUICK SORT ==========
+Pivot = 10: 10(P4) 10(P8) 20(P3) 20(P1) 15(P5) 20(P6) 25(P7) 15(P2) 
+Pivot = 15: 10(P4) 10(P8) 15(P5) 15(P2) 20(P3) 20(P6) 25(P7) 20(P1) 
+Pivot = 20: 10(P4) 10(P8) 15(P5) 15(P2) 20(P3) 20(P6) 20(P1) 25(P7) 
+Pivot = 20: 10(P4) 10(P8) 15(P5) 15(P2) 20(P3) 20(P6) 
+
+Final Quick Sort:
+10(P4) 10(P8) 15(P5) 15(P2) 20(P3) 20(P6) 20(P1) 25(P7) 
